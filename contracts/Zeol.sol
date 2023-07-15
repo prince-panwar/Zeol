@@ -40,10 +40,7 @@ contract Zeol is ERC20Capped, ERC20Burnable{
         
     }
 
-    //to destroy the smart contract when needed
-    function destroy() public onlyOwner{
-       selfdestruct(owner);
-}
+    
    
     modifier onlyOwner{
         require(msg.sender==owner,"Only owner can call this function");
