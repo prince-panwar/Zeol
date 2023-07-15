@@ -1,11 +1,11 @@
 
 const hre = require("hardhat");
-
 async function main() {
- const Token = hre.ethers.getContractFactory("Zeol");
- const ZeolToken= await Token.deploy(70000000,25)
- await ZeolToken.deployed();
- console.log("Zeol Token is  deployed",ZeolToken.address)
+  const deployedContract = await ethers.deployContract("Zeol",[70000000,25]);
+
+  await deployedContract.waitForDeployment();
+
+  console.log("Zeol Contract Address:", await deployedContract.target);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

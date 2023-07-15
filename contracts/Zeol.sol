@@ -11,7 +11,7 @@ contract Zeol is ERC20Capped, ERC20Burnable{
     address payable public owner;
     uint256 public blockReward;
    //contructor with cap size and reward value 
-    constructor(uint256 cap,uint256 reward ) ERC20("Zeol","ZOL") ERC20Capped(cap *(10**decimals())){
+    constructor(uint256 cap,uint256 reward ) ERC20("Zeol","ZOL") ERC20Capped(cap * (10 ** decimals())){
        owner = payable(msg.sender);
        _mint(msg.sender, 50000000 *(10**decimals()));
        blockReward = reward *(10**decimals());
