@@ -24,7 +24,7 @@ Zeol is an ERC20 token implemented on the Ethereum blockchain. It is capped and 
 Make sure to replace `<network-name>` with the desired network configuration from your `hardhat.config.js` file.
 
 ### Contract Details
-- Contract name: `Zeol`
+- Token name: `Zeol`
 - Symbol: `ZOL`
 - Decimals: 18
 - Cap: The maximum supply of tokens is 70000000 ZOL.
