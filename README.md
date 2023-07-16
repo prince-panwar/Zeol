@@ -1,8 +1,7 @@
 # Zeol Token
 
 ## Description
-Zeol is an ERC20 token implemented on the Ethereum blockchain. It is capped and supports burning of tokens. The token contract extends the OpenZeppelin ERC20, ERC20Capped, and ERC20Burnable contracts.
-
+Zeol is an ERC20 token implemented on the Ethereum blockchain. 
 ## Usage
 
 ### Prerequisites
